@@ -236,19 +236,19 @@ export default function MyPage() {
           </div>
           <nav className="flex gap-4 text-sm">
             <Link
-              to="#"
+              to="/"
               className="text-muted-foreground hover:underline underline-offset-4"
             >
               Terms
             </Link>
             <Link
-              to="#"
+              to="/"
               className="text-muted-foreground hover:underline underline-offset-4"
             >
               Privacy
             </Link>
             <Link
-              to="#"
+              to="/"
               className="text-muted-foreground hover:underline underline-offset-4"
             >
               Contact

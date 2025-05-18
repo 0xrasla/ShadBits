@@ -1,4 +1,4 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function CustomTabs() {
   return (
@@ -28,5 +28,5 @@ export function CustomTabs() {
         </div>
       </TabsContent>
     </Tabs>
-  )
+  );
 }

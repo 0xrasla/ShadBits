@@ -29,7 +29,7 @@ function App() {
               Browse
             </Link>
             <Link
-              to="#"
+              to="/"
               className="text-sm font-medium hover:underline underline-offset-4"
             >
               Docs
@@ -61,7 +61,7 @@ function App() {
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
-                <Link to="#">
+                <Link to="/">
                   <Button size="lg" variant="outline">
                     Learn More
                   </Button>
@@ -141,19 +141,19 @@ function App() {
           </div>
           <nav className="flex gap-4 text-sm">
             <Link
-              to="#"
+              to="/"
               className="text-muted-foreground hover:underline underline-offset-4"
             >
               Terms
             </Link>
             <Link
-              to="#"
+              to="/"
               className="text-muted-foreground hover:underline underline-offset-4"
             >
               Privacy
             </Link>
             <Link
-              to="#"
+              to="/"
               className="text-muted-foreground hover:underline underline-offset-4"
             >
               Contact

@@ -7,7 +7,9 @@
     "start": "vite --port 3000",
     "build": "vite build && tsc",
     "serve": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
