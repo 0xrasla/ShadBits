@@ -1,0 +1,48 @@
+{
+  "name": "shadbits",
+  "version": "1.0.0",
+  "description": "Enhanced UI Components for shadcn/ui",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "files": ["dist/**", "README.md", "LICENSE"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "build:lib": "tsup",
+    "prepublishOnly": "bun run build:lib"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "shadcn",
+    "radix-ui",
+    "tailwindcss",
+    "typescript"
+  ],
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/shadbits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/shadbits/issues"
+  },
+  "homepage": "https://github.com/yourusername/shadbits#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

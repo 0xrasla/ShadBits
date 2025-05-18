@@ -74,62 +74,6 @@ function MyComponent() {
 }
 ```
 
-More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-const peopleRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/people",
-  loader: async () => {
-    const response = await fetch("https://swapi.dev/api/people");
-    return response.json() as Promise<{
-      results: {
-        name: string;
-      }[];
-    }>;
-  },
-  component: () => {
-    const data = peopleRoute.useLoaderData();
-    return (
-      <ul>
-        {data.results.map((person) => (
-          <li key={person.name}>{person.name}</li>
-        ## 📚 Documentation
-
-Browse all available components in our interactive documentation:
-
-- Visit the [Component Browser](/browse) to see all components in action
-- Check out the [Documentation](/docs) for detailed usage instructions
-
-## 📐 Project Structure
-
-```
-
-src/
-├── components/
-│ ├── custom/ # Custom Shadbits components
-│ │ ├── custom-button.tsx
-│ │ ├── custom-tabs.tsx
-│ │ ├── gradient-badge.tsx
-│ │ ├── gradient-button.tsx
-│ │ ├── icon-tabs.tsx
-│ │ ├── outline-badge.tsx
-│ │ ├── outlined-button.tsx
-│ │ ├── pill-badge.tsx
-│ │ ├── pill-tabs.tsx
-│ │ └── status-badge.tsx
-│ └── ui/ # Standard shadcn/ui components
-├── routes/ # TanStack Router routes
-└── lib/ # Utility functions
-
-````
-
 ## 🛠️ Tech Stack
 
 - **React 19**: Latest version of React
@@ -146,7 +90,7 @@ This project uses [Vitest](https://vitest.dev/) for testing:
 
 ```bash
 bun test
-````
+```
 
 ## 🔨 Development
 
